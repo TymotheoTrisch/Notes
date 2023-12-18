@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Notas</title>
+    
+</head>
+<body>
+    <h1>Minhas Notas</h1>
+
+    <div id="notes-list">
+        <!-- Aqui serão exibidas as notas -->
+    </div>
+
+    <h2>Adicionar Nota</h2>
+    <form id="add-note-form">
+        <input type="text" id="title" placeholder="Título">
+        <textarea id="description" placeholder="Descrição"></textarea>
+        <button type="submit">Adicionar Nota</button>
+    </form>
+
+    <h2>Atualizar Nota</h2>
+    <form id="update-note-form">
+        <input type="text" id="update-title" placeholder="Título">
+        <textarea id="update-description" placeholder="Descrição"></textarea>
+        <input type="text" id="note-id" placeholder="ID da Nota a Atualizar">
+        <button type="submit">Atualizar Nota</button>
+    </form>
+
+    <h2>Excluir Nota</h2>
+    <form id="delete-note-form">
+        <input type="text" id="delete-id" placeholder="ID da Nota a Excluir">
+        <button type="submit">Excluir Nota</button>
+    </form>
+    <script src="index.js"></script>
+
+</body>
+</html>
